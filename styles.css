@@ -1,0 +1,535 @@
+body{
+    @media screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+        /* Add more media queries and responsive styles as needed */
+    }
+    
+    font-family: 'GFS Didot';font-size: 22px;
+   /* background-image: url(b.jpg);
+    background-repeat: repeat;
+    */
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Change background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.navbar-brand-container {
+    margin-right: auto;
+}
+
+.navbar-menu {
+    margin-left: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 70px; /* Adjust spacing between menu items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333; /* Adjust color for better readability */
+    transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Optional: Style the icons */
+.bx {
+    font-size: 1.5rem; /* Adjust icon size */
+}
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#eeeeee;/* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+.photo-area {
+    width: 35%; /* Adjust as needed */
+    text-align: right;
+    transition: width 0.3s ease, text-align 0.3s ease; /* Add transition effect */
+}
+
+/* Responsive Image Styles */
+.photo-area img {
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 48px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .photo-area {
+        width: 100%; /* Adjust width for smaller screens */
+        text-align: center; /* Center-align for smaller screens */
+    }
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.projects-section {
+    padding: 40px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Add slight upward movement on hover */
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Adjust color for better readability */
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Increase spacing between paragraphs */
+    color: #555; /* Adjust color for better readability */
+}
+
+.project ul {
+    margin-left: 20px;
+}
+
+.project li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+    color: #555; /* Adjust color for better readability */
+}
+
+.project ul li:last-child {
+    margin-bottom: 0; /* Remove margin for last list item */
+}
+
+#contact {
+    padding: 20px;
+    margin: 30px;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Soft box shadow */
+
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center align the content */
+}
+
+#contact h2 {
+    font-size: 32px;
+    color: #333; /* Dark text color */
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow elements to wrap to next line if needed */
+    max-width: 600px; /* Limit width to avoid stretching on larger screens */
+    margin: 0 auto 30px; /* Center and add bottom margin */
+    padding: 25px; /* Padding for card */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Soft box shadow */
+}
+
+/* Social container */
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #2c2c2c; /* Dark background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Social container hover */
+.socialContainer:hover {
+    background-color: #d62976; /* Change background color on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* WhatsApp container */
+.containerFour {
+    background-color: #128C7E; /* WhatsApp color */
+}
+
+/* Social SVG */
+.socialSvg {
+    width: 24px; /* Increase SVG size */
+    fill: #fff; /* White fill color */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Social SVG hover */
+.socialContainer:hover .socialSvg {
+    transform: translateY(-10px); /* Move SVG up on hover */
+}
+
+/* Contact email */
+#contact p {
+    font-size: 18px;
+    color: #555; /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+/* Contact form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 300px; /* Limit form width */
+    margin: 0 auto; /* Center form */
+    padding: 20px; /* Padding for form */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+/* Form title */
+.form .title {
+    font-size: 24px;
+    color: royalblue; /* Blue color */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Form input fields */
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none;
+}
+
+/* Form submit button */
+.form button {
+    padding: 10px 20px;
+    background-color: royalblue; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Form submit button hover */
+.form button:hover {
+    background-color: #007bff; /* Darker blue color on hover */
+}
+footer {
+    background-color: #d9d1d1; /* Dark background color */
+    color: black; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 15px 0; /* Vertical padding */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size */
+    line-height: 1.5; /* Line height */
+}
+
+footer a {
+    color: #fff; /* White color for links */
+    text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0; /* Reduce padding on smaller screens */
+    }
+
+    footer p {
+        font-size: 12px; /* Reduce font size on smaller screens */
+    }
+}
+#contactButton {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color:  #d9d9d9;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  #contactButton:active {
+    transform: scale(0.96);
+  }
+  
+  #contactButton:before,
+  #contactButton:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  #contactButton:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+  
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  #contactButton:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+  }
+  
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  /* CSS for Skill Bars */
+.skill-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+   
+    transition: transform 0.3s ease;
+    margin: 20px auto;
+    max-width: 500px; /* Adjust max-width for responsiveness */
+}
+
+.skill-item {
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    margin: 0;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.skill-level-html,
+.skill-level-css,
+.skill-level-php,
+.skill-level-js,
+.skill-level-mysql,
+.skill-level-java,
+.skill-level-c {
+    background-color: #4CAF50; /* Adjust color as needed */
+    height: 100%;
+    transition: width 1s ease-in-out; /* Transition effect */
+}
+
+/* Responsive CSS */
+@media (max-width: 600px) {
+    .skill-container {
+        max-width: 300px; /* Adjust max-width for smaller screens */
+    }
+}
