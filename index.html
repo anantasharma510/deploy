@@ -15,16 +15,22 @@
                 <a class="navbar-brand" href="index.html">Ananta Sharma</a>
              
             </div>
+            
             <div class="navbar-menu" id="navbarMenu">
                 <ul class="navbar-nav">
+                    
                     <li class="nav-item">
-                        <a href="#home" class="nav-link"><i class='bx bx-home'></i></a>
+                        <a href="events.html" class="nav-link">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
+                        <a href="resume.html" class="nav-link">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="Blogs.html" class="nav-link">Blogs</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link"><i class='bx bxs-chat'></i></a>
@@ -35,6 +41,8 @@
     </nav>
     <br>
     <br>
+    <br>
+
     <main>
         <section id="about" class="about-section">
             <div class="about-content">
@@ -50,6 +58,9 @@
     </main>
     <section id="projects" class="projects-section">
         <h2>Projects</h2>
+        <label><h4>View All Projects!</h4></label>
+        <a href="allprojects.html">Click Here</a>
+        <br><br>
         <div class="project">
             <h3>Admin and Student Section for University Programs</h3>
             <p>I have created an admin and student section for the BCA program at PN Campus. This system manages student information, notices, exams, etc., and includes an admin section.</p>
@@ -61,6 +72,7 @@
                 <li>JavaScript</li>
                 <li>MySQL</li>
             </ul>
+            
         </div>
         <div class="project">
             <h3>Portfolio</h3>
@@ -121,6 +133,13 @@
                 <button>Submit</button>
             </form>
             <script>
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scroll-to-bottom').fadeOut('slow');
+                    } else {
+                        $('.scroll-to-bottom').fadeIn('slow');
+                    }
+                });
                 document.addEventListener("DOMContentLoaded", function() {
                     const contactButton = document.getElementById("contactButton");
                     const form = document.querySelector(".form");
