@@ -18,7 +18,12 @@ body{
     padding: 10px 20px; /* Add padding for spacing */
     background-color: #f9f9f9; /* Change background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
-}
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;}
 
 .navbar-brand-container {
     margin-right: auto;
@@ -206,7 +211,7 @@ body{
 }
 
 .project:hover {
-    transform: translateY(-5px); /* Add slight upward movement on hover */
+    transform: translateY(-6px); /* Add slight upward movement on hover */
 }
 
 .project h3 {
