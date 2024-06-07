@@ -1,0 +1,105 @@
+
+        /* Custom styles for resume.html */
+        body {
+            font-family: 'GFS Didot', serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .nav-item {
+            margin-right: 30px;
+            margin-left: 80px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.1);
+        }
+
+        .resume-content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .resume-content h2 {
+            margin-top: 0;
+            color: #343a40;
+        }
+
+        .resume-content h3 {
+            margin-top: 20px;
+            color: #343a40;
+        }
+
+        .resume-content ul {
+            padding-left: 20px;
+        }
+
+        .resume-content li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-item {
+                margin-right: 10px;
+            }
+
+            .resume-content {
+                padding: 10px;
+            }
+
+            .resume-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .resume-content h3 {
+                font-size: 1.2rem;
+            }
+        }
+    
